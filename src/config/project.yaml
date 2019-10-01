@@ -1,0 +1,322 @@
+dateModified: 1569892913
+email:
+  fromEmail: christopher.jativa320@outlook.com
+  fromName: zerochass-cms
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  0224eaf2-9e27-4337-9291-d5a98dcf9a73:
+    name: Tutorial
+  5f2bf53e-378e-40f3-8218-84446def68f2:
+    name: Common
+fields:
+  19d995e0-3c8a-421d-ac6b-21282f856bd0:
+    name: Description
+    handle: description
+    instructions: 'Add a multi-line description of the tutorial'
+    searchable: true
+    translationMethod: site
+    translationKeyFormat: null
+    type: craft\fields\Matrix
+    settings:
+      minBlocks: '1'
+      maxBlocks: '1'
+      contentTable: '{{%matrixcontent_description}}'
+      propagationMethod: all
+    fieldGroup: 0224eaf2-9e27-4337-9291-d5a98dcf9a73
+    contentColumnType: string
+  6775615a-d7f1-4579-b680-b9393c97eb2b:
+    name: Tags
+    handle: tags
+    instructions: ''
+    searchable: true
+    translationMethod: site
+    translationKeyFormat: null
+    type: craft\fields\Tags
+    settings:
+      allowMultipleSources: false
+      allowLimit: false
+      sources: '*'
+      source: 'taggroup:b7836918-00b2-4d85-afde-de1abcb30c6a'
+      targetSiteId: null
+      viewMode: null
+      limit: null
+      selectionLabel: ''
+      localizeRelations: false
+      validateRelatedElements: ''
+    fieldGroup: 0224eaf2-9e27-4337-9291-d5a98dcf9a73
+    contentColumnType: string
+  994121e3-aaea-45fb-8caf-2c9488fa3141:
+    name: Content
+    handle: tutorialContent
+    instructions: 'Enter the content sections for the tutorial here'
+    searchable: false
+    translationMethod: site
+    translationKeyFormat: null
+    type: craft\fields\Matrix
+    settings:
+      minBlocks: ''
+      maxBlocks: ''
+      contentTable: '{{%matrixcontent_tutorialcontent}}'
+      propagationMethod: all
+    fieldGroup: 0224eaf2-9e27-4337-9291-d5a98dcf9a73
+    contentColumnType: string
+  ddff9620-acbc-48f5-a25a-96a58da640e6:
+    name: 'Featured Image'
+    handle: featuredImage
+    instructions: ''
+    searchable: true
+    translationMethod: site
+    translationKeyFormat: null
+    type: craft\fields\Assets
+    settings:
+      useSingleFolder: '1'
+      defaultUploadLocationSource: 'volume:d4d267f6-405e-4f41-822d-610bd43b4fdf'
+      defaultUploadLocationSubpath: ''
+      singleUploadLocationSource: 'volume:d4d267f6-405e-4f41-822d-610bd43b4fdf'
+      singleUploadLocationSubpath: ''
+      restrictFiles: '1'
+      allowedKinds:
+        - image
+      sources: '*'
+      source: null
+      targetSiteId: null
+      viewMode: list
+      limit: '1'
+      selectionLabel: ''
+      localizeRelations: false
+      validateRelatedElements: '1'
+    fieldGroup: 0224eaf2-9e27-4337-9291-d5a98dcf9a73
+    contentColumnType: string
+  eb8fbc41-675a-4905-abfd-4a6fbc8d58cb:
+    name: Color
+    handle: color
+    instructions: 'Select the color this tutorial should use'
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\Dropdown
+    settings:
+      optgroups: true
+      options:
+        -
+          label: Pink
+          value: pink
+          default: ''
+        -
+          label: Black
+          value: black
+          default: ''
+        -
+          label: Teal
+          value: teal
+          default: ''
+        -
+          label: White
+          value: white
+          default: ''
+    fieldGroup: 0224eaf2-9e27-4337-9291-d5a98dcf9a73
+    contentColumnType: string
+matrixBlockTypes:
+  5c1eb744-2508-47f8-9cd7-fcd85082d717:
+    name: 'Section Block'
+    handle: sectionBlock
+    sortOrder: 1
+    field: 994121e3-aaea-45fb-8caf-2c9488fa3141
+    fieldLayouts:
+      6bb389e8-0534-4063-ad44-affe00510c65:
+        tabs:
+          -
+            name: Content
+            sortOrder: 1
+            fields:
+              61c5692e-2c85-4a5f-b632-b1228fa5457f:
+                required: true
+                sortOrder: 2
+              d636b9fa-6b0b-466f-9b5d-a51fdbb8ae9c:
+                required: true
+                sortOrder: 1
+    fields:
+      61c5692e-2c85-4a5f-b632-b1228fa5457f:
+        name: 'Section Content'
+        handle: sectionContent
+        instructions: 'Enter the content for this section here'
+        searchable: false
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\redactor\Field
+        settings:
+          redactorConfig: Standard.json
+          purifierConfig: ''
+          cleanupHtml: true
+          removeInlineStyles: '1'
+          removeEmptyTags: '1'
+          removeNbsp: '1'
+          purifyHtml: '1'
+          columnType: text
+          availableVolumes: '*'
+          availableTransforms: '*'
+        fieldGroup: null
+        contentColumnType: text
+      d636b9fa-6b0b-466f-9b5d-a51fdbb8ae9c:
+        name: 'Section Title'
+        handle: sectionTitle
+        instructions: 'Enter the title of the section here'
+        searchable: false
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\fields\PlainText
+        settings:
+          placeholder: ''
+          code: ''
+          multiline: ''
+          initialRows: '4'
+          charLimit: ''
+          columnType: text
+        fieldGroup: null
+        contentColumnType: text
+  fe5e6d72-daa3-405a-9582-c15fa6815d77:
+    name: Description
+    handle: description
+    sortOrder: 1
+    field: 19d995e0-3c8a-421d-ac6b-21282f856bd0
+    fieldLayouts:
+      f58a7778-c5e0-4900-9931-0431d066c015:
+        tabs:
+          -
+            name: Content
+            sortOrder: 1
+            fields:
+              47421619-a584-4d2f-bca7-2cc3658cf21f:
+                required: true
+                sortOrder: 1
+              9e8a2ace-97bb-432a-a589-9d327f3c1805:
+                required: true
+                sortOrder: 2
+    fields:
+      47421619-a584-4d2f-bca7-2cc3658cf21f:
+        name: 'First Line'
+        handle: firstLine
+        instructions: 'Enter the first line of the description here'
+        searchable: false
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\fields\PlainText
+        settings:
+          placeholder: ''
+          code: ''
+          multiline: ''
+          initialRows: '4'
+          charLimit: ''
+          columnType: text
+        fieldGroup: null
+        contentColumnType: text
+      9e8a2ace-97bb-432a-a589-9d327f3c1805:
+        name: 'Second Line'
+        handle: secondLine
+        instructions: 'Enter the second line of the description here. It will appear below the first line with a space in-between'
+        searchable: false
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\fields\PlainText
+        settings:
+          placeholder: ''
+          code: ''
+          multiline: ''
+          initialRows: '4'
+          charLimit: ''
+          columnType: text
+        fieldGroup: null
+        contentColumnType: text
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  sidebar-themes:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      theme: dracula
+sections:
+  c126b885-5263-47d1-9c0d-463b4ed22bcb:
+    name: Tutorials
+    handle: tutorials
+    type: channel
+    enableVersioning: true
+    propagationMethod: all
+    entryTypes:
+      e67b1cbc-bb00-4140-a617-58f980464623:
+        name: Tutorial
+        handle: tutorial
+        hasTitleField: true
+        titleLabel: 'Tutorial Title'
+        titleFormat: ''
+        sortOrder: 1
+        fieldLayouts:
+          d5fca481-e7dd-4587-a193-a91aa95bba5a:
+            tabs:
+              -
+                name: Tutorial
+                sortOrder: 1
+                fields:
+                  19d995e0-3c8a-421d-ac6b-21282f856bd0:
+                    required: true
+                    sortOrder: 1
+                  6775615a-d7f1-4579-b680-b9393c97eb2b:
+                    required: true
+                    sortOrder: 5
+                  994121e3-aaea-45fb-8caf-2c9488fa3141:
+                    required: true
+                    sortOrder: 4
+                  ddff9620-acbc-48f5-a25a-96a58da640e6:
+                    required: true
+                    sortOrder: 3
+                  eb8fbc41-675a-4905-abfd-4a6fbc8d58cb:
+                    required: true
+                    sortOrder: 2
+    siteSettings:
+      da6f86f5-8664-412d-b75b-80f2861cec81:
+        enabledByDefault: true
+        hasUrls: false
+        uriFormat: null
+        template: null
+siteGroups:
+  7d52864c-e6ac-4ce5-823c-5ede5de2e7cc:
+    name: zerochass-cms
+sites:
+  da6f86f5-8664-412d-b75b-80f2861cec81:
+    name: 'Zerochass - Content Management System'
+    handle: default
+    language: en-US
+    hasUrls: true
+    baseUrl: 'http://zerochass-cms'
+    sortOrder: 1
+    primary: true
+    siteGroup: 7d52864c-e6ac-4ce5-823c-5ede5de2e7cc
+system:
+  edition: pro
+  name: 'Zerochass CMS'
+  live: true
+  schemaVersion: 3.3.3
+  timeZone: America/Los_Angeles
+tagGroups:
+  b7836918-00b2-4d85-afde-de1abcb30c6a:
+    name: 'Tutorial Tags'
+    handle: tutorialtags
+users:
+  requireEmailVerification: true
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoVolumeUid: null
+  photoSubpath: ''
+volumes:
+  d4d267f6-405e-4f41-822d-610bd43b4fdf:
+    name: 'Featured Images'
+    handle: featuredimages
+    type: craft\volumes\Local
+    hasUrls: true
+    url: '@web/featured-images'
+    settings:
+      path: '@webroot/featured-images'
+    sortOrder: 1
