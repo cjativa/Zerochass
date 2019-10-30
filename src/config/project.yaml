@@ -1,4 +1,4 @@
-dateModified: 1569892913
+dateModified: 1571970617
 email:
   fromEmail: christopher.jativa320@outlook.com
   fromName: zerochass-cms
@@ -58,8 +58,8 @@ fields:
       maxBlocks: ''
       contentTable: '{{%matrixcontent_tutorialcontent}}'
       propagationMethod: all
-    fieldGroup: 0224eaf2-9e27-4337-9291-d5a98dcf9a73
     contentColumnType: string
+    fieldGroup: 0224eaf2-9e27-4337-9291-d5a98dcf9a73
   ddff9620-acbc-48f5-a25a-96a58da640e6:
     name: 'Featured Image'
     handle: featuredImage
@@ -118,23 +118,10 @@ fields:
     contentColumnType: string
 matrixBlockTypes:
   5c1eb744-2508-47f8-9cd7-fcd85082d717:
+    field: 994121e3-aaea-45fb-8caf-2c9488fa3141
     name: 'Section Block'
     handle: sectionBlock
     sortOrder: 1
-    field: 994121e3-aaea-45fb-8caf-2c9488fa3141
-    fieldLayouts:
-      6bb389e8-0534-4063-ad44-affe00510c65:
-        tabs:
-          -
-            name: Content
-            sortOrder: 1
-            fields:
-              61c5692e-2c85-4a5f-b632-b1228fa5457f:
-                required: true
-                sortOrder: 2
-              d636b9fa-6b0b-466f-9b5d-a51fdbb8ae9c:
-                required: true
-                sortOrder: 1
     fields:
       61c5692e-2c85-4a5f-b632-b1228fa5457f:
         name: 'Section Content'
@@ -143,20 +130,18 @@ matrixBlockTypes:
         searchable: false
         translationMethod: none
         translationKeyFormat: null
-        type: craft\redactor\Field
+        type: Acoustep\CraftEasyMDE\Fields\CraftEasyMDEField
         settings:
-          redactorConfig: Standard.json
-          purifierConfig: ''
-          cleanupHtml: true
-          removeInlineStyles: '1'
-          removeEmptyTags: '1'
-          removeNbsp: '1'
-          purifyHtml: '1'
+          mode: plain
+          modeOverride: null
+          placeholder: ''
+          code: ''
+          multiline: ''
+          initialRows: '4'
+          charLimit: ''
           columnType: text
-          availableVolumes: '*'
-          availableTransforms: '*'
-        fieldGroup: null
         contentColumnType: text
+        fieldGroup: null
       d636b9fa-6b0b-466f-9b5d-a51fdbb8ae9c:
         name: 'Section Title'
         handle: sectionTitle
@@ -172,8 +157,21 @@ matrixBlockTypes:
           initialRows: '4'
           charLimit: ''
           columnType: text
-        fieldGroup: null
         contentColumnType: text
+        fieldGroup: null
+    fieldLayouts:
+      6bb389e8-0534-4063-ad44-affe00510c65:
+        tabs:
+          -
+            name: Content
+            sortOrder: 1
+            fields:
+              61c5692e-2c85-4a5f-b632-b1228fa5457f:
+                required: true
+                sortOrder: 2
+              d636b9fa-6b0b-466f-9b5d-a51fdbb8ae9c:
+                required: true
+                sortOrder: 1
   fe5e6d72-daa3-405a-9582-c15fa6815d77:
     name: Description
     handle: description
@@ -238,6 +236,18 @@ plugins:
     schemaVersion: 1.0.0
     settings:
       theme: dracula
+  craft-easymde:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  smartdown:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  aws-s3:
+    edition: standard
+    enabled: true
+    schemaVersion: '1.2'
 sections:
   c126b885-5263-47d1-9c0d-463b4ed22bcb:
     name: Tutorials
@@ -311,6 +321,26 @@ users:
   photoVolumeUid: null
   photoSubpath: ''
 volumes:
+  0050d434-7d37-41ca-8d39-f1db6bbacdc1:
+    name: Images
+    handle: images
+    type: craft\awss3\Volume
+    hasUrls: true
+    url: 'https://s3.us-east-1.amazonaws.com/zerochass-assets/'
+    settings:
+      subfolder: images
+      keyId: AKIARWN3FSLTV7QTAS47
+      secret: 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
+      bucketSelectionMode: choose
+      bucket: zerochass-assets
+      region: us-east-1
+      expires: ''
+      makeUploadsPublic: '1'
+      storageClass: ''
+      cfDistributionId: ''
+      cfPrefix: ''
+      autoFocalPoint: ''
+    sortOrder: 2
   d4d267f6-405e-4f41-822d-610bd43b4fdf:
     name: 'Featured Images'
     handle: featuredimages
