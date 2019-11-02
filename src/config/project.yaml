@@ -1,4 +1,4 @@
-dateModified: 1571970617
+dateModified: 1572666474
 email:
   fromEmail: christopher.jativa320@outlook.com
   fromName: zerochass-cms
@@ -249,6 +249,58 @@ plugins:
     enabled: true
     schemaVersion: '1.2'
 sections:
+  0239d092-9ec6-49ef-a6cd-b11af57efee7:
+    name: 'Tutorial Series'
+    handle: tutorialSeries
+    type: structure
+    enableVersioning: true
+    propagationMethod: all
+    siteSettings:
+      da6f86f5-8664-412d-b75b-80f2861cec81:
+        enabledByDefault: true
+        hasUrls: false
+        uriFormat: null
+        template: null
+    structure:
+      uid: 10563bef-9af8-4f32-8071-4ec9e820e0b2
+      maxLevels: 2
+    entryTypes:
+      bcc8d810-b44b-4dec-b9b2-a3324589a0dd:
+        name: Tutorial
+        handle: tutorial
+        hasTitleField: true
+        titleLabel: Title
+        titleFormat: ''
+        sortOrder: 2
+        fieldLayouts:
+          db9672ef-fb05-487f-b37c-78abb6a62ae3:
+            tabs:
+              -
+                name: Tutorial
+                sortOrder: 1
+                fields:
+                  19d995e0-3c8a-421d-ac6b-21282f856bd0:
+                    required: false
+                    sortOrder: 1
+                  6775615a-d7f1-4579-b680-b9393c97eb2b:
+                    required: false
+                    sortOrder: 4
+                  994121e3-aaea-45fb-8caf-2c9488fa3141:
+                    required: false
+                    sortOrder: 5
+                  ddff9620-acbc-48f5-a25a-96a58da640e6:
+                    required: false
+                    sortOrder: 3
+                  eb8fbc41-675a-4905-abfd-4a6fbc8d58cb:
+                    required: false
+                    sortOrder: 2
+      d891832e-da21-437f-9c7b-2dccfcd61b15:
+        name: 'Tutorial Series'
+        handle: tutorialSeries
+        hasTitleField: true
+        titleLabel: Title
+        titleFormat: ''
+        sortOrder: 1
   c126b885-5263-47d1-9c0d-463b4ed22bcb:
     name: Tutorials
     handle: tutorials
