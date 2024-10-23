@@ -43,7 +43,7 @@ export const ShareBar = (props: Props) => {
         title="Share 🚀"
         >
             <div className="tutorial-share-bar">
-                <span className="box-subtitle">Motivate your friends!</span>
+                <span className="box-subtitle">Tell all your friends!</span>
                 <textarea className="box-text-area"
                     rows={6}
                     cols={30}
