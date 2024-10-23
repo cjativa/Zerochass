@@ -34,7 +34,7 @@ export const SiteBanner = () => {
         <div className="site-banner__header">
           <p className="sb-header">learn. build. and write</p>
           <p className="sb-subheader">
-            practical and goal-oriented resources for all by all
+            informative and practical posts on building software
           </p>
         </div>
 
