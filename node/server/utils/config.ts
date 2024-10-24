@@ -1,19 +1,17 @@
 const Config = {
-    craftURL: process.env.NEXT_PUBLIC_CRAFT_CMS_URL,
+  dbHost: process.env.DB_HOST,
+  dbUser: process.env.DB_USER,
+  dbPassword: process.env.DB_PASSWORD,
+  dbName: process.env.DB_NAME,
 
-    dbHost: process.env.DB_HOST,
-    dbUser: process.env.DB_USER,
-    dbPassword: process.env.DB_PASSWORD,
-    dbName: process.env.DB_NAME,
+  zerochassSecret: process.env.ZEROCHASS_SECRET,
 
-    zerochassSecret: process.env.ZEROCHASS_SECRET,
+  awsRegion: process.env.AWS_REGION,
+  awsBucket: process.env.AWS_BUCKET,
 
-    awsRegion: process.env.AWS_REGION,
-    awsBucket: process.env.AWS_BUCKET,
+  port: process.env.PORT,
 
-    port: process.env.PORT,
-
-    environment: 'development'.toLowerCase()
+  environment: (process.env.NODE_ENV || "DEVELOPMENT").toLowerCase(),
 };
 
 export default Config;

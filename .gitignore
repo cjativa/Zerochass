@@ -2,6 +2,7 @@
 .docker-config/nginx/letsencrypt
 *.env
 ebdeploy.zip
+app.zip
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
