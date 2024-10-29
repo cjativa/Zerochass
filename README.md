@@ -1,48 +1,30 @@
-# Zerochass
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
 
-This is the code repository for [Zerochass](http://zerochass.io] — an online learning platform for Web Development and Software Engineering.
+## Getting Started
 
-It is built with these technologies
-- React TypeScript
-- Next.js
-- Craft CMS
-- Docker
-- Nginx
-- Make
+First, run the development server:
 
-and deployed on AWS Elastic Beanstalk.
-
-## Development
-
-You must have Docker installed as the development environment is containerized into three separate Docker containers
-1. A PHP container for running Craft CMS
-2. An Nginx container for directing requests to the CMS and to the Next.js application
-3. The Next.js application (a NodeJS container)
-
-And you can run 
-```
-docker-compose build node
-docker-compose build php
-docker-compose build nginx
+```bash
+npm run dev
+# or
+yarn dev
 ```
 
-to build the containers.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-__You can then start the containers using__
-`docker-compose up node`
-`docker-compose up php`
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-and you're ready to go for local development.
+## Learn More
 
-## Deploying to Elastic Beanstalk
+To learn more about Next.js, take a look at the following resources:
 
-You can run
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-```
-export IMAGE=<image name: node, nginx, php>
-make push
-```
+You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
 
-to build each image and have it deployed to AWS ECR. 
+## Deploy on Vercel
 
-Then run `make zippy` to generate the needed ZIP file for deploying to Elastic Beanstalk.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

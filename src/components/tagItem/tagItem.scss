@@ -1,0 +1,16 @@
+.tag-item {
+    background: rgba(212, 214, 216, 0.664);
+    width: max-content;
+
+    padding: 5px 10px;
+    border-radius: 4px;
+
+    &:hover {
+        background: rgb(188 188 188 / 66%);
+        cursor: pointer;
+    }
+
+    &--margin {
+        margin: 0.25em 0.25em;
+    }
+}

@@ -1,0 +1,23 @@
+.user-snip {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-items: center;
+    column-gap: 1em;
+
+    &.fill {
+        padding: 1em 0;
+    }
+
+    &__avi {
+        height: 50px;
+        width: 50px;
+
+        border-radius: 50%;
+        border: 2px solid #d8e2e7;
+    }
+
+    &__username {
+        color: $mainTeal;
+        text-align: left;
+    }
+}

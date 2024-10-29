@@ -1,0 +1,39 @@
+.profile {
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    background-color: $white;
+
+    &__heading {
+        display: grid;
+        grid-template-rows: min-content 1fr;
+        row-gap: 1em;
+        align-items: end;
+
+        img {
+            height: 82px;
+            width: 82px;
+            border-radius: 50%;
+        }
+    }
+
+    &__body {
+        display: grid;
+        grid-template-rows: repeat(4, min-content) 1fr;
+        row-gap: 35px;
+    }
+
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1024px) {
+        &__heading {
+            img {
+                height: 120px;
+                width: 120px;
+            }
+        }
+    }
+    @media (min-width: 1280px) {
+    }
+}

@@ -1,0 +1,83 @@
+.base-dialog {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  color: #ffffff;
+
+  background-color: #141414;
+  font-family: "Nunito";
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .unfocused {
+    color: #b4b4b4;
+  }
+
+  .heading {
+    font-size: 25px;
+  }
+
+  .divider {
+    color: #e63662;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .form-field {
+    color: white;
+  }
+
+  input {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 18px;
+    background-color: #ff3366;
+    color: #ffffff;
+  }
+
+  input,
+  button {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    font-family: "Nunito";
+    border-style: none;
+  }
+
+  @media (min-width: 40rem) {
+    height: 72vh;
+    width: 480px;
+
+    border-radius: 8px;
+  }
+
+  @media (min-width: 60rem) {
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.52);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

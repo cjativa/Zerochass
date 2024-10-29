@@ -1,0 +1,14 @@
+.account {
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+
+    &__heading {
+        display: grid;
+    }
+
+    &__body {
+        display: grid;
+        grid-template-rows: repeat(4, min-content) 1fr;
+        row-gap: 35px;
+    }
+}

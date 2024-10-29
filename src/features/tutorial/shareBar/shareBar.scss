@@ -1,0 +1,35 @@
+.tutorial-share-bar {
+  color: #444444;
+  font-size: 14px;
+  text-align: center;
+  width: 200px;
+
+  .box-title,
+  .box-subtitle {
+    display: block;
+    padding: 15px;
+  }
+
+  .box-title {
+    border-bottom: 1px solid #4bb3fd;
+  }
+
+  .box-subtitle {
+    color: #e93578;
+  }
+
+  .share-box {
+    border: 1px solid #4bb3fd;
+  }
+
+  .box-text-area {
+    font-family: Helvetica;
+    width: 160px;
+    height: 150px;
+    margin: 5px 0px;
+    padding: 5px;
+
+    box-sizing: border-box;
+    resize: none;
+  }
+}

@@ -1,0 +1,105 @@
+.tutorial-action-bar {
+    .ta-bar {
+        position: absolute;
+        margin: auto;
+        width: fit-content;
+        bottom: -33px;
+
+        &--center {
+            left: 0;
+            right: 0;
+        }
+
+        &--right {
+            right: 1em;
+        }
+
+        i.fa-circle {
+            text-shadow: 0px 0px 2px #f5edef;
+        }
+
+        &__btn {
+            font-size: 1.5em;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &--code {
+                i:first-of-type {
+                    color: #ff3366;
+                }
+
+                &:hover {
+                    i:first-of-type {
+                        color: #ff4f7e;
+                    }
+                }
+            }
+
+            &--comments {
+                i:first-of-type {
+                    color: #f15946;
+                }
+
+                &:hover {
+                    i:first-of-type {
+                        color: #f86753;
+                    }
+                }
+            }
+
+            &--enrolls {
+                i:first-of-type {
+                    color: #f9c22e;
+                }
+
+                &:hover {
+                    i:first-of-type {
+                        color: #ffd04f;
+                    }
+                }
+            }
+
+            &--planner {
+                i:first-of-type {
+                    color: #45b914;
+                }
+
+                &:hover {
+                    i:first-of-type {
+                        color: #5cd12a;
+                    }
+                }
+
+                i.enrolled {
+                    -webkit-text-stroke: 1px white;
+                    color: #5cd12a;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+        .ta-bar {
+            position: absolute;
+            margin: auto;
+            width: fit-content;
+            bottom: -33px;
+
+            &--right {
+                right: 3em;
+            }
+
+            &__btn {
+                font-size: 2em;
+            }
+        }
+    }
+    @media (min-width: 1024px) {
+    }
+    @media (min-width: 1280px) {
+    }
+}

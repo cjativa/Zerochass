@@ -1,0 +1,46 @@
+#progress-span {
+    cursor: pointer;
+
+    .not-started {
+        &-fg {
+            color: #aaaaaa;
+        }
+
+        &-bg {
+            color: #ebebeb;
+        }
+    }
+
+    &:hover,
+    &:active {
+        .not-started {
+            &-fg {
+                color: #f7f6f6;
+            }
+
+            &-bg {
+                color: #e93578;
+            }
+        }
+    }
+
+    .in-progress {
+        &-fg {
+            color: #f7f6f6;
+        }
+
+        &-bg {
+            color: #e93578;
+        }
+    }
+
+    .completed {
+        &-fg {
+            color: #f7f6f6;
+        }
+
+        &-bg {
+            color: #f6a2bf;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.tutorial-list {
+    background: white;
+
+    display: grid;
+    grid-auto-rows: auto;
+
+    justify-content: center;
+    row-gap: 1.5em;
+
+    padding: 0.5em 0;
+
+    @include for-size(tablet-landscape-up) {
+        padding: 1.5em 0;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 1em;
+    }
+
+    @include for-size(desktop-up) {
+        grid-template-columns: repeat(3, auto);
+    }
+}

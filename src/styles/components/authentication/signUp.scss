@@ -1,0 +1,34 @@
+.base-authentication-page {
+  .sign-up-grid {
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 7fr;
+  }
+
+  .sign-up-form {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .span-down {
+    grid-row: 4 / 6;
+    align-self: center;
+  }
+
+  .tou-info {
+    display: block;
+    font-size: 10px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  button {
+    font-size: 18px;
+    background-color: #ff3366;
+    color: #ffffff;
+  }
+
+  @media (min-width: 30rem) {
+
+  }
+}

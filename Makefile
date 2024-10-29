@@ -30,3 +30,8 @@ push: ecr-login build-$(IMAGE)
 zippy: 
 	rm -f ebdeploy.zip
 	zip ebdeploy.zip Dockerrun.aws.json .ebextensions/*
+
+zip-application:
+	rm -f node/application.zip
+	cd node && zip application.zip -r .next/* .npmrc package.json package-lock.json sitemap.js \
+	    siteconfig.json next.config.js next-env.d.ts public/*

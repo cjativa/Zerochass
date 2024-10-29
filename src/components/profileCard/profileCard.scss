@@ -1,0 +1,28 @@
+.profile-card {
+    max-width: 300px;
+    width: fit-content;
+    height: 370px;
+
+    .pc-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__image {
+            height: 100px;
+            width: 100px;
+
+            margin-bottom: 10px;
+            border-radius: 100px;
+        }
+    }
+
+    .pc-footer {
+        &__link {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

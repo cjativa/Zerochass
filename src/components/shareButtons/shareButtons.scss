@@ -1,0 +1,28 @@
+.share-btns {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    justify-content: center;
+    column-gap: 10px;
+
+    width: 100%;
+    padding: 5px 0px;
+
+    .bg {
+        font-size: 1.5em;
+    }
+
+    .fg {
+        font-size: 0.8em;
+    }
+
+    .circle {
+        height: 1.5em;
+        width: 1.5em;
+        line-height: 1.5em;
+
+        &:hover {
+            cursor: pointer;
+            filter: brightness(1.1);
+        }
+    }
+}

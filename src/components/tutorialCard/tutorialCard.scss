@@ -1,0 +1,127 @@
+.tl-card {
+    height: 380px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.23);
+
+    display: grid;
+    grid-template-rows: 163px 1fr;
+    grid-template-areas:
+        "cardTop"
+        "cardLower";
+
+    /* pointer-events: all; */
+
+    &__top {
+        text-align: center;
+        position: relative;
+        pointer-events: none;
+
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid lightgray;
+        height: 100%;
+    }
+
+    &__bottom {
+        padding: 1.5em 1.5em;
+        text-align: center;
+        font-size: 12px;
+
+        display: grid;
+        align-items: center;
+        grid-template-rows: min-content min-content;
+        row-gap: 1em;
+
+        position: relative;
+        height: 100%;
+        box-sizing: border-box;
+
+        color: $normalFontColor;
+        background-color: #ffffff;
+    }
+
+    &__title {
+        font-size: 15px;
+        word-wrap: break-word;
+        line-height: unset;
+
+        &.large {
+            font-size: 19px;
+        }
+    }
+
+    &__subtitle {
+        align-self: start;
+        &.large {
+            font-size: 14px;
+        }
+    }
+
+    &__image {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+    &__author {
+        position: absolute;
+        bottom: 1.5em;
+        left: 1em;
+
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+        column-gap: 6px;
+    }
+
+    &__author-image {
+        height: 36px;
+        width: 36px;
+
+        border-radius: 50%;
+        border: 2px solid #d8e2e7;
+    }
+
+    @media (min-width: 640px) {
+    }
+
+    @media (min-width: 768px) {
+        /* height: 295px; */
+        width: 280px;
+
+        &__title {
+            font-size: 20px;
+        }
+
+        &__bottom {
+            font-size: 14.5px;
+        }
+
+        &__layer {
+            background: rgba(0, 0, 0, 0.068);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+
+            pointer-events: none;
+        }
+
+        &:hover &__layer {
+            visibility: hidden;
+        }
+    }
+
+    @media (min-width: 1024px) {
+    }
+
+    @media (min-width: 1280px) {
+        min-height: 310px;
+        width: 290px;
+    }
+}

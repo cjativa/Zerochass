@@ -1,0 +1,121 @@
+.user-layout {
+    flex: 1;
+
+    box-sizing: border-box;
+    background: $white;
+
+    display: flex;
+    justify-content: center;
+    padding: 0 20vw;
+
+    &__container {
+        background-color: $white;
+        width: 100%;
+        border-left: $solidGrayBorder;
+        border-right: $solidGrayBorder;
+    }
+
+    &__menu {
+        display: grid;
+        grid-template-rows: min-content 1fr;
+        justify-items: center;
+
+        box-sizing: border-box;
+
+        img {
+            height: 10em;
+            width: 10em;
+        }
+    }
+
+    &__logo {
+        background: #d5d5d5;
+        width: 100%;
+        padding: 2em;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__menu-links {
+        display: grid;
+        grid-template-rows: repeat(2, min-content);
+        row-gap: 0.5em;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    &__menu-link {
+        display: block;
+        padding: 1em;
+
+        &:hover {
+            background: #4545456b;
+        }
+
+        &.active {
+            background: $mainGreen;
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-rows: min-content 1fr;
+        row-gap: 1em;
+
+        padding: 1vh 3vw;
+    }
+
+    &__title {
+        font-size: 30px;
+    }
+
+    .save {
+        background-color: $mainPink;
+        color: $white;
+    }
+
+    .divider {
+        border-top: 1px solid #20e9e9;
+        width: 100%;
+        margin: 30px 0px;
+    }
+
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+        padding: 0 10vw;
+        &__container {
+            display: grid;
+            grid-template-columns: 30vw 1fr;
+        }
+    }
+    @media (min-width: 1024px) {
+        padding: 0 20vw;
+    }
+    @media (min-width: 1280px) {
+        &__container {
+            display: grid;
+            grid-template-columns: 15vw 1fr;
+        }
+
+        &__menu {
+        }
+
+        &__content {
+            padding: 0 6vw;
+        }
+
+        .save {
+            width: min-content;
+            padding: 18px;
+            justify-self: end;
+        }
+    }
+
+    @import "./account/account.scss";
+    @import "./connect/connect.scss";
+    @import "./profile/profile.scss";
+}

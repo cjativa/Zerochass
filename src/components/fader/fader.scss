@@ -1,0 +1,16 @@
+.fader {
+    font-size: 12px;
+    height: 12px;
+
+    &.fader--success {
+        color: $success !important;
+    }
+
+    &.fader--error {
+        color: $error;
+    }
+
+    &.fader--hidden {
+        visibility: hidden;
+    }
+}

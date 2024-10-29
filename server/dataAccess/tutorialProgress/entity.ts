@@ -1,0 +1,1 @@
+export { TutorialProgressDAO as TutorialProgressDB } from './index';

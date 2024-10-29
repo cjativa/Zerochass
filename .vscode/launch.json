@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Next: Chrome",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Next",
+      "runtimeExecutable": "${workspaceFolder}/node_modules/next/dist/bin/next",
+      "args": [
+        "dev"
+      ],
+      "env": {
+        "NODE_OPTIONS": "--inspect=127.0.0.1:3003"
+      },
+      "sourceMaps": true,
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach Program",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "port": 9229
+    }
+  ]
+}
