@@ -67,6 +67,11 @@ export const Layout = (props: LayoutProps) => {
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image ? image : defaultImage} />
 
+        {/** OG metas */}
+        <meta name="og:title" content={fullPageTitle} />
+        <meta name="og:description" content={description} />
+        <meta name="og:image" content={image ? image : defaultImage} />
+
         <title>{fullPageTitle}</title>
 
         {/** Scripts */}
