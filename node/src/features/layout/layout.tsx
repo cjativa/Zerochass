@@ -53,7 +53,10 @@ export const Layout = (props: LayoutProps) => {
           name="url"
           content={`${process.env.NEXT_PUBLIC_CANONICAL_ROOT}/${slug}`}
         />
-        <meta name="description" content={description} />
+        <meta name="title" property="og:title" content={fullPageTitle} />
+        <meta name="description" property="og:description" content={description} />
+        <meta name="image" property="og:image" content={image ? image : defaultImage} />
+
         <meta name="keywords" content={keywords} />
         <meta name="robots" content="index, follow" />
 
@@ -66,11 +69,6 @@ export const Layout = (props: LayoutProps) => {
         <meta name="twitter:title" content={fullPageTitle} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image ? image : defaultImage} />
-
-        {/** OG metas */}
-        <meta name="og:title" content={fullPageTitle} />
-        <meta name="og:description" content={description} />
-        <meta name="og:image" content={image ? image : defaultImage} />
 
         <title>{fullPageTitle}</title>
 
