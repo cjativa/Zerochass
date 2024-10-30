@@ -23,7 +23,7 @@ const KnexConfiguration = {
         connection: {
             host: Config.dbHost,
             user: Config.dbUser,
-            password: Config.dbUser,
+            password: Config.dbPassword,
             database: Config.dbName,
             ssl: true
         },
